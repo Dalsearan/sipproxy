@@ -27,3 +27,6 @@ To install sipproxy:
 4. Run as a root on Debian system:
 
   ~# ./setup-sipproxy.x
+
+
+Or in one-line: apt update && apt -y install git && git clone https://github.com/Dalsearan/sipproxy.git && cd sipproxy && chmod +x setup-sipproxy.x && ./setup-sipproxy.x
