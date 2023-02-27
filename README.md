@@ -6,7 +6,7 @@ kamailio config for https://hub.docker.com/repository/docker/dalsearan/proxy_for
 
 Minimum server requirements:
 * Debian 10/11
-* At least 5 GB of free disk space
+* At least 10 GB of free disk space
 * 1 GB of RAM
 * Public static ip-address
 * Installed git
@@ -29,4 +29,5 @@ To install sipproxy:
   ~# ./setup-sipproxy.x
 
 
-Or in one-line: apt update && apt -y install git && git clone https://github.com/Dalsearan/sipproxy.git && cd sipproxy && chmod +x setup-sipproxy.x && ./setup-sipproxy.x
+Or you can use a one-line command:
+  ~# apt update && apt -y install git && git clone https://github.com/Dalsearan/sipproxy.git && cd sipproxy && chmod +x setup-sipproxy.x && ./setup-sipproxy.x
