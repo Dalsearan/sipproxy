@@ -27,6 +27,8 @@ To install sipproxy:
 4. Run as a root on Debian system:
 
   ~# ./setup-sipproxy.x
+  
+5. Follow the installation instructions.
 
 
 Or you can use a one-line command:
