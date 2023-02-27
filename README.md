@@ -30,4 +30,5 @@ To install sipproxy:
 
 
 Or you can use a one-line command:
+
   ~# apt update && apt -y install git && git clone https://github.com/Dalsearan/sipproxy.git && cd sipproxy && chmod +x setup-sipproxy.x && ./setup-sipproxy.x
