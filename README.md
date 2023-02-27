@@ -11,20 +11,21 @@ Minimum server requirements:
 * Public static ip-address
 * Installed git
 
-To install sipproxy:
+Installation instructions:
+
 1. Clone this repo to a local VDS/VPS:
 
   ~# git clone https://github.com/Dalsearan/sipproxy.git
 
-2. Go to the directory sipproxy:
+2. Go to the sipproxy directory:
 
   ~# cd sipproxy
 
-3. Execute:
+3. Run command to make executable:
 
   ~# chmod +x setup-sipproxy.x
 
-4. Run as a root on Debian system:
+4. Then run as a root on Debian system:
 
   ~# ./setup-sipproxy.x
   
