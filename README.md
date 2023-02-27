@@ -35,3 +35,29 @@ Installation instructions:
 Or you can use a one-line command:
 
   ~# apt update && apt -y install git && git clone https://github.com/Dalsearan/sipproxy.git && cd sipproxy && chmod +x setup-sipproxy.x && ./setup-sipproxy.x
+  
+  
+Using of sipproxy:
+
+  SIP phone:
+    Set the ip-address of sipproxy as an outbound proxy in your SIP phone settings.
+  
+  Asterisk:
+  
+   SIP: Set the parameter "outboundproxy=ip-address of sipproxy" for the SIP-trunk in sip.conf, for example:
+   outboundproxy=192.168.0.1
+    
+   PJSIP: https://wiki.asterisk.org/wiki/display/AST/PJSIP+with+Proxies
+   
+  FreeSwitch:
+  
+   In a SIP trunk parameter file such as "sip-trunk.xml", add the following parameter <param name="outbound-proxy" value="ip-address of sipproxy"/>, for example:
+   
+    <include>
+      <!--gateway name required, you will use this in the outbound dialplan -->
+        <gateway name="sip-trunk">
+          ...
+          <param name="outbound-proxy" value="192.168.0.1"/>
+          ...
+        </gateway>
+    </include>
