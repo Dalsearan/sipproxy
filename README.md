@@ -40,14 +40,14 @@ kamailio config for https://hub.docker.com/repository/docker/dalsearan/proxy_for
 # Using of sipproxy:
 
 ## SIP phone:
-   Set the ip-address of sipproxy as an outbound proxy in your SIP phone settings.
+   Set the ip-address and port ***25060*** of sipproxy as an outbound proxy in your SIP phone settings.
   
 ## Asterisk:
   
  ###  SIP:
- Set the parameter "outboundproxy=ip-address of sipproxy" for the SIP-trunk in sip.conf, for example:
+ Set the parameter "outboundproxy=ip-address of sipproxy:25060" for the SIP-trunk in sip.conf, for example:
  
-    outboundproxy=192.168.0.1
+    outboundproxy=192.168.0.1:25060
     
  ###  PJSIP:
  https://wiki.asterisk.org/wiki/display/AST/PJSIP+with+Proxies
@@ -60,7 +60,7 @@ kamailio config for https://hub.docker.com/repository/docker/dalsearan/proxy_for
       <!--gateway name required, you will use this in the outbound dialplan -->
         <gateway name="sip-trunk">
           ...
-          <param name="outbound-proxy" value="192.168.0.1"/>
+          <param name="outbound-proxy" value="192.168.0.1:25060"/>
           ...
         </gateway>
     </include>
