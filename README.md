@@ -2,7 +2,9 @@
 
 This is project for proxy (sip and rtp) calls.
 
-kamailio config for https://hub.docker.com/repository/docker/dalsearan/proxy_for_sip/general
+Instructions for https://hub.docker.com/repository/docker/dalsearan/proxy_for_sip/general
+
+for expirienced users to dig in config - branch master
 
 # Minimum server requirements:
 * Debian 10/11
